@@ -1,6 +1,6 @@
 let operation = prompt("Enter the operation (+, -, *, /):");
-let number1 = parseFloat(prompt("Enter the first number:"));
-let number2 = parseFloat(prompt("Enter the second number:"));
+let number1 = Number(prompt("Enter the first number:"));
+let number2 = Number(prompt("Enter the second number:"));
 
 
 let result;
@@ -24,4 +24,4 @@ switch (operation) {
 
 
 console.log("Result:", result);
-alert ("Result:", result);
+alert ( result);

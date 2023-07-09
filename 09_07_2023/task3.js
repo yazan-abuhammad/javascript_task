@@ -1,5 +1,5 @@
 
-let month = parseInt(prompt("Enter your birthdate month (1-12):"));
+let month = Number(prompt("Enter your birthdate month (1-12):"));
 
 
 let monthName;

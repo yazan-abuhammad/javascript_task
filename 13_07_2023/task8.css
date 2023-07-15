@@ -1,0 +1,8 @@
+.square {
+
+    
+        width: 40vmin;
+        height: 40vmin;
+        border: 1px solid black;
+        background-color: blue;
+}

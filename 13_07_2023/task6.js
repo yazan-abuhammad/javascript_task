@@ -1,5 +1,16 @@
-document.querySelector('.japan').addEventListener('click',function(){
-document.querySelector('.chan').textContent='jhhddds'
 
-})
-console.log(Math.floor(Math.random() * 3) + 1);
+
+ function changeImg() {
+ let country = document.querySelector('#country')
+ let img= document.querySelector('#pic')
+ img.src = "../resorces/" + country.options[country.selectedIndex].value;
+ console.log(country)
+ }
+ let country = document.querySelector('#country')
+ country.addEventListener('change' , changeImg)
+
+ 
+    
+
+
+

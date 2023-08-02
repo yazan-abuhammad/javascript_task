@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+  }
+
+  h5 {
+    text-align: center;
+  }
+</style>
+<body>
+  <h3>Task no.1</h3>
+  <h5>Script or console</h5>
+  
+  <h3>Task no.2</h3>
+  <h5>Script or console</h5>
+  
+  <h3>Task no.3</h3>
+  <h5>Script or console</h5>
+  <hr>
+  
+  <h3>Task no.4</h3>
+  <h5>Script or console</h5>
+  <hr>
+
+  
+</body>
+<script defer>
+  //task 1
+  function onlyEvenValues(ar){
+    let newarray = [ ]
+    ar.forEach(e => e % 2==0 ? newarray.push(e):e);
+    return newarray
+  }
+
+  //task 2
+  function showFirstAndLast(arr){
+    let newarray = []
+    arr.forEach(e => newarray.push(e[0]+e.at(-1)))
+    return newarray
+  }
+
+  //task 3 
+  function addKeyAndValue(arr,key,value){
+    let array = []
+    arr.forEach(e => {
+      e[`${key}`] = value;
+    });
+    return arr
+  }
+
+  //task 4
+  function vowelCount(str){
+    str = str.split('').map(e => e.toUpperCase())
+    obj = {}
+    str.forEach(e => {
+      switch(e){
+        case 'A':
+          obj[e] ? obj[e]++ : obj[e] = 1
+          break;
+        case 'E':
+          obj[e] ? obj[e]++ : obj[e] = 1
+          break;
+        case 'I':
+          obj[e] ? obj[e]++ : obj[e] = 1
+          break;
+        case 'O':
+          obj[e] ? obj[e]++ : obj[e] = 1
+          break;
+        case 'U':
+          obj[e] ? obj[e]++ : obj[e] = 1
+          break;
+      }
+    })
+    return obj
+  }
+
+</script>
+</html>

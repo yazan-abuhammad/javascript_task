@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1rem;
+    }
+
+    h5 {
+      text-align: center;
+    }
+</style>
+<body>
+
+  <h3>Task no.1</h3>
+  <h5>Script or console using doubleNumbers([2, 5, 100]) </h5>
+
+  <hr>
+  <h3>Task no.2</h3>
+  <h5>Script or console using stringItUp([2, 5, 100])</h5>
+
+  <h3>Task no.3</h3>
+  <h5>Script or console using capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])</h5>
+
+  <h3>Task no.4</h3>
+  <h5>Script or console using namesOnly([{name: "Angelina Jolie",age: 80},{name: "Eric Jones",age: 2},{name: "Paris Hilton",age: 5},{name: "Kayne West",age: 16},{name: "Bob Ziroll",age: 100}]); </h5>
+
+  <h3>Task no.5</h3>
+  <h5>Script or console using readyToPutInTheDOM([{name: "Angelina Jolie",age: 80},{name: "Eric Jones",age: 2},{name: "Paris Hilton",age: 5},{name: "Kayne West",age: 16},{name: "Bob Ziroll",age: 100}]); </h5>
+  
+  <h3>Task no.6</h3>
+  <h5>Script or console using readyToPutInTheDOM([{name: "Angelina Jolie",age: 80},{name: "Eric Jones",age: 2},{name: "Paris Hilton",age: 5},{name: "Kayne West",age: 16},{name: "Bob Ziroll",age: 100}]); </h5>
+  
+  <h3>Task no.7</h3>
+  <h5>Script or console</h5>
+  
+  <h3>Task no.8</h3>
+  <h5>Script or console</h5>
+  
+  <h3>Task no.9</h3>
+  <h5>Script or console</h5>
+  <hr>
+  
+  <h3>Task no.10</h3>
+  <h5>Script or console</h5>
+  <hr>
+
+</body>
+<script defer>
+  //task 1
+  function doubleNumbers(ar){
+    return ar.map(e => e*2)
+  }
+
+  //task 2
+  function stringItUp(ar){
+    return ar.map(e => `${e}`)
+  }
+
+  //task 3
+  function capitalizeNames(ar){
+    return ar.map(e => `${e[0].toUpperCase()}${e.slice(1).toLowerCase()}`)
+  }
+
+  //task 4
+  function namesOnly(obj){
+    return obj.map(e => e.name )
+  }
+
+  //task 5 
+  function makeStrings(obj){
+    return obj.map(e => e.age > 18 ? `${e.name} can go to The Matrix` : `${e.name} is under age!!` )
+  }
+
+  //task 6 
+  function readyToPutInTheDOM(obj){
+    return obj.map(e => `<h1>${e.name}</h1><h2>${e.age}</h2>`)
+  }
+
+  //task 8
+  function valTimesIndex(a){
+    return a.map((e,i) => e * i)
+  }
+
+  //task 9
+  function extractKey(arr , key){
+    return arr.map(e => e.name)
+  }
+
+  //task 10
+  function extractFullName(arr){
+    return arr.map(e => `${e.first} ${e.last}`)
+  }
+
+
+
+
+</script>
+</html>
+

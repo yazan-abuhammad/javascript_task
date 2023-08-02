@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,3 +18,51 @@
     <script src="task9.js"></script>
 </body>
 </html>
+=======
+<link rel="stylesheet" href="task9.css" />
+<html>
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required />
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required />
+
+        <label for="birth_date">Birth Date (YYYY-MM-DD):</label>
+        <input type="text" id="birth_date" name="birth_date" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="confirm_email">Confirm Email:</label>
+        <input type="email" id="confirm_email" name="confirm_email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          required
+        />
+
+        <label for="mobile_number">Mobile Number (10 digits):</label>
+        <input type="tel" id="mobile_number" name="mobile_number" required />
+
+        <input type="submit" value="Register" />
+      </form>
+      <div id="errorMessages" class="error-message"></div>
+    </div>
+
+    <script src="task9.js"></script>
+  </body>
+</html>
+>>>>>>> c6af55553ea43baa859ba0f6418d16ccd30668dc
